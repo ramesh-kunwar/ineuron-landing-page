@@ -1,0 +1,586 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.nav-bar-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+
+}
+
+.nav-bar-top input {
+    width: 100%;
+    border: 1px solid #4358C6;
+    padding: .5rem 2rem;
+    border-radius: 5px;
+    outline: none;
+    position: relative;
+
+}
+
+.nav-bar-top .left {
+    display: flex;
+    align-items: center;
+
+
+}
+
+.fa-bars {
+    display: none;
+
+}
+
+.nav-bar-top .left i {
+    position: absolute;
+    z-index: 5;
+    /* left: ri; */
+    margin-left: 10px;
+    color: #4358C6;
+    cursor: pointer;
+}
+
+.nav-bar-top img {
+    width: 200px;
+}
+
+.nav-bar-top button {
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    border: 1px solid #4358C6;
+    background-color: transparent;
+}
+
+.nav-bar-top button.btn-sign-in {
+    background-color: #051463;
+    color: white;
+    margin-left: 20px;
+
+}
+
+
+.nav-bar-bottom ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+
+}
+
+.nav-bar-bottom ul a {
+    color: black;
+    margin: 1rem;
+}
+
+
+
+
+/* 
+**************************************************
+        drop down
+**************************************************
+
+*/
+
+
+.drop-down {
+    position: relative;
+}
+
+.drop-down-content {
+    position: absolute;
+    top: 25px;
+}
+
+ul.drop-down-content {
+    display: none;
+    z-index: 5;
+    background-color: rgb(240, 240, 240);
+
+    padding: 1rem;
+}
+
+.nav-bar-bottom ul li:first-child:hover ul.drop-down-content {
+    display: block;
+}
+
+ul.drop-down-content li {
+    margin: 1rem auto;
+    width: 200px;
+    text-align: center;
+    padding: .5rem 0;
+    border-bottom: 1px solid rgb(204, 204, 204);
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+ul.drop-down-content li:hover {
+    background-color: #4358C6;
+    color: white;
+
+}
+
+
+
+
+/* 
+**************************************************
+     end of    drop down
+**************************************************
+
+*/
+
+
+
+#hero-section {
+
+    margin-top: 5rem
+}
+
+#hero-section h1 {
+    font-size: 5rem;
+    font-weight: 900;
+}
+
+#hero-section h1 span {
+    color: #4358C6;
+}
+
+#hero-section img {
+    width: 100%;
+}
+
+.hero-container {
+    display: flex;
+    margin-top: 3rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-container .hero-left {
+    width: 30%;
+}
+
+.hero-container .hero-left .item {
+    margin: 2rem auto;
+}
+
+.hero-container .hero-right {
+    width: 70%;
+}
+
+.hero-bottom {
+    display: flex;
+    gap: 2rem;
+}
+
+
+#hard-work {
+    margin: 15rem auto;
+}
+
+.hard-work-container {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 4rem;
+    /* margin-top: 4rem; */
+    text-align: center;
+
+}
+
+.hard-work-container img {
+    width: 50%;
+    margin: 0 auto;
+}
+
+#hard-work h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+}
+
+.hard-work-container .item {
+    border-right: 1px solid rgb(202, 202, 202);
+
+}
+
+#hard-work h2 {
+    font-size: 2rem;
+}
+
+#hard-work h2 span {
+    color: #4358C6;
+}
+
+
+
+#courses {}
+
+#courses h1 {
+    font-size: 4rem;
+}
+
+#courses .courses-list-link {
+    margin: 3rem 0;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    cursor: pointer;
+    border-bottom: 1px solid rgb(199, 199, 199);
+}
+
+.courses-list-link h3 {
+    font-size: 1.5rem;
+}
+
+.courses-list-link h3.active {
+    border-bottom: 4px solid #4358C6;
+    color: #4358C6;
+}
+
+#courses img {
+    width: 100%;
+}
+
+.courses-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+}
+
+.courses-container .item h2 {
+    color: #051463;
+}
+
+.courses-container .item {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin: .5rem auto;
+    padding: 3rem 0;
+    border-bottom: 1px solid rgb(211, 211, 211);
+    flex-wrap: wrap;
+}
+
+.courses-container .item .item-left,
+.courses-container .item .item-right {
+    flex: 40%;
+}
+
+.courses-container p {
+    margin-top: 1rem;
+    color: gray;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+
+#our-products {
+    margin-top: 15rem;
+}
+
+#our-products h1 {
+    font-size: 4rem;
+    font-weight: 900;
+    text-align: center;
+}
+
+#our-products .product-container {
+    margin-top: 5rem;
+
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product-container .item {
+    flex: 30%;
+    margin: 3rem auto;
+}
+
+#our-products img {
+    width: 50%;
+}
+
+.product-container p {
+    color: gray;
+}
+
+.product-container h2 {
+    margin: 1rem auto;
+}
+
+#tech-avengers {
+    margin: 15rem auto;
+}
+
+#tech-avengers h1 {
+    font-size: 4rem;
+    margin: 2rem auto;
+    font-weight: 900;
+}
+
+#tech-avengers .tech-avengers-container {
+    margin: 3rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    text-align: center;
+}
+
+.tech-avengers-container .item img {
+    width: 100%;
+}
+
+.tech-avengers-container .item p {
+    color: gray;
+}
+
+.tech-avengers-container .item h2 {
+    font-size: 1.2rem;
+}
+
+.tech-avengers-container .item i {
+    font-size: 1.2rem;
+    margin: .5rem;
+    cursor: pointer;
+    color: #051463;
+}
+
+.tech-avengers-container .item {
+    flex: 18%;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+
+}
+
+
+#fame {}
+
+#fame h1 {
+    font-size: 5rem;
+}
+
+.fame-container {
+    margin: 2rem auto;
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.fame-container img {
+    width: 80px;
+    border-radius: 50%;
+}
+
+.fame-container .item {
+    display: flex;
+    align-items: center;
+    flex: 40%;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.fame-container .item span {
+    color: #4358C6;
+    font-weight: 700;
+}
+
+.fame-container .item p {
+    color: gray;
+    font-weight: 100;
+    margin: .5rem auto;
+}
+
+
+footer {
+    margin-top: 15rem;
+    background-color: #4358C6;
+    color: white;
+}
+
+.footer-container img {
+    width: 200px;
+}
+
+.footer-container h4 {
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+footer .footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.footer-container ul li {
+    margin: 1rem auto;
+}
+
+
+
+
+
+@media (max-width:700px) {
+
+    .nav-bar-top input {
+        display: none;
+
+    }
+
+
+    .nav-bar-top img {
+        width: 100px;
+    }
+
+    .nav-bar-top .left i {
+        font-size: 2rem;
+    }
+
+    .nav-bar-top button.btn-sign-in {
+        margin-left: 0px;
+    }
+
+    .nav-bar-bottom {
+        display: none;
+    }
+
+    #hero-section h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .hero-container {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 3rem;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .hero-container .hero-right {
+        width: 100%;
+        order: -1;
+    }
+
+    .hero-container .hero-left {
+        display: none;
+    }
+
+
+    #hard-work {
+        margin: 10rem auto;
+    }
+
+    #hard-work h1 {
+        font-size: 2rem;
+        line-height: 2rem;
+        text-align: center;
+    }
+
+    .hard-work-container {
+        margin-top: 5rem;
+        display: block;
+
+    }
+
+    .hard-work-container .item {
+        border-right: none;
+        border-bottom: 1px solid rgb(202, 202, 202);
+        padding-bottom: 1rem;
+        margin: 3rem auto;
+    }
+
+    #courses h1 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+
+    .courses-list-link h3 {
+        font-size: 1rem;
+    }
+
+
+    .courses-container {
+        display: block;
+
+    }
+
+    .courses-container .item {
+        display: block;
+
+    }
+
+    .courses-container .item h2 {
+        margin-top: .5rem;
+    }
+
+
+    #our-products h1 {
+        font-size: 3rem;
+
+    }
+
+    #our-products .product-container {
+        margin-top: 2rem;
+
+        text-align: center;
+        display: block;
+
+    }
+
+    .product-container .item {
+        margin: 5rem auto;
+        padding: 1rem;
+        border-bottom: 1px solid rgb(226, 226, 226);
+    }
+
+
+    #tech-avengers h1 {
+        font-size: 3rem;
+
+    }
+
+    #tech-avengers .tech-avengers-container {
+
+        display: block;
+
+    }
+
+    .tech-avengers-container .item {
+        margin: 2rem auto;
+
+    }
+
+
+    #fame h1 {
+        font-size: 3rem;
+    }
+
+
+
+}
