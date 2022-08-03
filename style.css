@@ -9,12 +9,12 @@
 
 }
 
-.container {
+/* .container {
     width: 80%;
     margin: 0 auto;
-}
+} */
 
-.nav-bar-top {
+/* .nav-bar-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -47,7 +47,6 @@
 .nav-bar-top .left i {
     position: absolute;
     z-index: 5;
-    /* left: ri; */
     margin-left: 10px;
     color: #4358C6;
     cursor: pointer;
@@ -83,7 +82,7 @@
     color: black;
     margin: 1rem;
 }
-
+ */
 
 
 
@@ -95,7 +94,7 @@
 */
 
 
-.drop-down {
+/* .drop-down {
     position: relative;
 }
 
@@ -130,7 +129,7 @@ ul.drop-down-content li:hover {
     background-color: #4358C6;
     color: white;
 
-}
+} */
 
 
 
@@ -142,6 +141,28 @@ ul.drop-down-content li:hover {
 
 */
 
+nav {
+    margin-top: 2rem;
+}
+
+/* nav a{
+    color: red;
+    font-family: 'Open Sans', sans-serif;
+
+} */
+nav img {
+    width: 100px;
+}
+
+nav button.login {
+    background-color: #051463;
+    color: white;
+}
+
+nav button.sign-up {
+    border: 1px solid #051463;
+    color: #051463;
+}
 
 
 #hero-section {
@@ -209,6 +230,7 @@ ul.drop-down-content li:hover {
 #hard-work h1 {
     font-size: 4rem;
     line-height: 4rem;
+    font-weight: 900;
 }
 
 .hard-work-container .item {
@@ -230,6 +252,7 @@ ul.drop-down-content li:hover {
 
 #courses h1 {
     font-size: 4rem;
+    font-weight: 900;
 }
 
 #courses .courses-list-link {
@@ -262,6 +285,8 @@ ul.drop-down-content li:hover {
 
 .courses-container .item h2 {
     color: #051463;
+    font-weight: 700;
+    font-size: 1.5rem;
 }
 
 .courses-container .item {
@@ -301,7 +326,10 @@ ul.drop-down-content li:hover {
     margin-top: 5rem;
 
     text-align: center;
-    display: flex;
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1rem;
     flex-wrap: wrap;
     gap: 2rem;
     align-items: center;
@@ -319,10 +347,13 @@ ul.drop-down-content li:hover {
 
 .product-container p {
     color: gray;
+    font-size: .9rem;
 }
 
 .product-container h2 {
     margin: 1rem auto;
+    font-weight: 700;
+    font-size: 1.3rem;
 }
 
 #tech-avengers {
@@ -375,6 +406,12 @@ ul.drop-down-content li:hover {
 
 #fame h1 {
     font-size: 5rem;
+    font-weight: 900;
+}
+
+#fame h3 {
+    font-weight: 700;
+    font-size: 1.2rem;
 }
 
 .fame-container {
@@ -420,6 +457,7 @@ footer {
 .footer-container img {
     width: 200px;
 }
+
 
 .footer-container h4 {
     padding: 1rem 0;
@@ -499,6 +537,8 @@ footer .footer-container {
         font-size: 2rem;
         line-height: 2rem;
         text-align: center;
+        font-weight: 900;
+        /* color: red; */
     }
 
     .hard-work-container {
@@ -537,6 +577,7 @@ footer .footer-container {
 
     .courses-container .item h2 {
         margin-top: .5rem;
+        font-weight: 700;
     }
 
 
@@ -559,6 +600,10 @@ footer .footer-container {
         border-bottom: 1px solid rgb(226, 226, 226);
     }
 
+    #our-products img {
+        width: 100px;
+    }
+
 
     #tech-avengers h1 {
         font-size: 3rem;
@@ -576,11 +621,25 @@ footer .footer-container {
 
     }
 
+    .fame-container {
+        display: block;
+
+    }
 
     #fame h1 {
         font-size: 3rem;
     }
 
 
+    .fame-container .item {
+        display: flex;
+        align-items: center;
+        flex: 40%;
+        gap: 1rem;
+        padding: 1rem;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        margin: 1rem 0;
+    }
 
 }
